@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo">Portfolio</a>
+      
+      <nav>
+        <div class="nav-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon sun-icon">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon moon-icon" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </nav>
+    </div>
+    
+    <div id="mobile-menu" class="container mobile-menu">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <h1>Hi, I'm <span class="text-primary">Mekideche Moncef Ali</span></h1>
+      <p>I'm a passionate developer specializing in building exceptional digital experiences.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+        <a href="#contact" class="btn btn-outline btn-lg">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <div class="profile-image">
+          <img src=img-portfolio.jpg alt="Profile">
+        </div>
+        <div class="about-content">
+          <p>I'm a passionate web developer with a strong foundation in modern technologies. With a background in computer science and several years of industry experience, I specialize in creating responsive, user-friendly applications that solve real-world problems.</p>
+          <p>When I'm not coding, you can find me hiking in the mountains, reading science fiction, or experimenting with new recipes in the kitchen. I believe in continuous learning and am always exploring new technologies to expand my skill set.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" style="width: 2rem; height: 2rem;">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="9" y1="21" x2="9" y2="9"></line>
+            </svg>
+          </div>
+          <h3 class="skill-title">Frontend</h3>
+          <ul class="skill-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        
+        <!-- Backend -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" style="width: 2rem; height: 2rem;">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="skill-title">Backend</h3>
+          <ul class="skill-list">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>RESTful APIs</li>
+          </ul>
+        </div>
+        
+        <!-- Database -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" style="width: 2rem; height: 2rem;">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+          </div>
+          <h3 class="skill-title">Database</h3>
+          <ul class="skill-list">
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+    
+          </ul>
+        </div>
+        
+        <!-- DevOps -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" style="width: 2rem; height: 2rem;">
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
+            </svg>
+          </div>
+          <h3 class="skill-title">DevOps</h3>
+          <ul class="skill-list">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Docker</li>
+            <li>CI/CD</li>
+            <li>AWS</li>
+            <li>Vercel</li>
+          </ul>
+        </div>
+        
+        <!-- Design -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" style="width: 2rem; height: 2rem;">
+              <path d="M15 4V2"></path>
+              <path d="M15 16v-2"></path>
+              <path d="M8 9h2"></path>
+              <path d="M20 9h2"></path>
+              <path d="M17.7 11.7l1.4-1.4"></path>
+              <path d="M17.7 6.3l1.4 1.4"></path>
+              <path d="M12 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+              <path d="M12 12v4"></path>
+              <path d="M15 19v3"></path>
+              <path d="M9 19v3"></path>
+              <path d="M12 19v3"></path>
+            </svg>
+          </div>
+          <h3 class="skill-title">Design</h3>
+          <ul class="skill-list">
+            <li>Figma</li>
+            <li>Adobe XD</li>
+            <li>UI/UX</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+        
+        <!-- Languages -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" style="width: 2rem; height: 2rem;">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="skill-title">Languages</h3>
+          <ul class="skill-list">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+          </ul>
+        </div>
+        
+        <!-- Architecture -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" style="width: 2rem; height: 2rem;">
+              <path d="M12 2 L22 8.5 L22 15.5 L12 22 L2 15.5 L2 8.5 L12 2"></path>
+              <path d="M12 22 L12 15.5"></path>
+              <path d="M22 8.5 L12 15.5 L2 8.5"></path>
+              <path d="M2 15.5 L12 8.5 L22 15.5"></path>
+              <path d="M12 2 L12 8.5"></path>
+            </svg>
+          </div>
+          <h3 class="skill-title">Architecture</h3>
+          <ul class="skill-list">
+            <li>Microservices</li>
+            <li>MVC</li>
+            <li>REST</li>
+            <li>GraphQL</li>
+          </ul>
+        </div>
+        
+        <!-- Other -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" style="width: 2rem; height: 2rem;">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3 class="skill-title">Other</h3>
+          <ul class="skill-list">
+            <li>SEO</li>
+            <li>Performance Optimization</li>
+            <li>Accessibility</li>
+            <li>Testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2>Work Experience</h2>
+      
+      <!-- Experience 1 -->
+      <div class="experience-card">
+        <div class="experience-header">
+          <h3 class="experience-title">Senior Frontend Developer</h3>
+          <div class="experience-company">Tech Solutions Inc. | 2021 - Present</div>
+          <div class="experience-tags">
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Tailwind CSS</span>
+          </div>
+        </div>
+        <p>Lead the frontend development team in building responsive web applications using React and Next.js. Implemented CI/CD pipelines and improved performance by 40%.</p>
+      </div>
+      
+      <!-- Experience 2 -->
+      <div class="experience-card">
+        <div class="experience-header">
+          <h3 class="experience-title">Full Stack Developer</h3>
+          <div class="experience-company">Digital Innovations | 2018 - 2021</div>
+          <div class="experience-tags">
+            <span class="tag">MongoDB</span>
+            <span class="tag">Express</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </div>
+        <p>Developed and maintained full-stack applications using the MERN stack. Collaborated with UX designers to implement responsive designs and improve user experience.</p>
+      </div>
+      
+      <!-- Experience 3 -->
+      <div class="experience-card">
+        <div class="experience-header">
+          <h3 class="experience-title">Web Developer</h3>
+          <div class="experience-company">Creative Agency | 2016 - 2018</div>
+          <div class="experience-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">WordPress</span>
+          </div>
+        </div>
+        <p>Built and maintained client websites using modern web technologies. Worked closely with designers to translate mockups into functional websites.</p>
+      </div>
+      
+      <!-- Experience 4 -->
+      <div class="experience-card">
+        <div class="experience-header">
+          <h3 class="experience-title">Intern</h3>
+          <div class="experience-company">Startup Hub | 2015 - 2016</div>
+          <div class="experience-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PHP</span>
+          </div>
+        </div>
+        <p>Assisted in the development of web applications and gained hands-on experience with various technologies and development methodologies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://placehold.co/600x400" alt="E-commerce Platform">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">E-commerce Platform</h3>
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Stripe</span>
+            </div>
+            <p class="project-description">A full-featured e-commerce platform with product listings, cart functionality, user authentication, and payment processing.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm" style="margin-right: 0.5rem;">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                Code
+              </a>
+              <a href="#" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm" style="margin-right: 0.5rem;">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://placehold.co/600x400" alt="Task Management App">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Task Management App</h3>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Material UI</span>
+              <span class="tag">Redux</span>
+            </div>
+            <p class="project-description">A collaborative task management application with real-time updates, task assignments, and progress tracking.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm" style="margin-right: 0.5rem;">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                Code
+              </a>
+              <a href="#" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm" style="margin-right: 0.5rem;">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://placehold.co/600x400" alt="Portfolio Website">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Portfolio Website</h3>
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Framer Motion</span>
+            </div>
+            <p class="project-description">A responsive portfolio website showcasing projects, skills, and experience with a clean, modern design.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm" style="margin-right: 0.5rem;">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                Code
+              </a>
+              <a href="#" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm" style="margin-right: 0.5rem;">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://placehold.co/600x400" alt="Weather Dashboard">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Weather Dashboard</h3>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">OpenWeather API</span>
+              <span class="tag">Chart.js</span>
+              <span class="tag">CSS</span>
+            </div>
+            <p class="project-description">A weather application that provides current conditions and forecasts for locations worldwide using weather APIs.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm" style="margin-right: 0.5rem;">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                Code
+              </a>
+              <a href="#" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm" style="margin-right: 0.5rem;">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-card">
+          <h3>Contact Information</h3>
+          <p>Feel free to reach out through any of these channels</p>
+          
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <span>moncef.mk.usthb@gmail.com</span>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <span>+213776333594</span>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <span>Alger,Alger</span>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <h3>Connect with me</h3>
+            <div class="social-icons">
+              <a href="#" class="btn btn-outline btn-icon" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="#" class="btn btn-outline btn-icon" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="#" class="btn btn-outline btn-icon" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-card">
+          <h3>Send Me a Message</h3>
+          <p>I'll get back to you as soon as possible</p>
+          
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <div class="footer-logo">Portfolio</div>
+        <div class="footer-copyright">&copy; <span id="current-year">2023</span> Your Name. All rights reserved.</div>
+      </div>
+      
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm">
+            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
